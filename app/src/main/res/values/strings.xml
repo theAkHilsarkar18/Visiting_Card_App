@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Visiting Card App</string>
+    <string name="visiting_card">Visiting Card</string>
+    <string name="todo">TODO</string>
+    <string name="home">HomeScreen</string>
+    <string name="main_activity_screen">Main Activity Screen</string>
+    <string name="add_details">Add Details</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="enter_password">Enter password</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="address">Address</string>
+    <string name="email">Email</string>
+    <string name="buisness_name">Buisness Name</string>
+    <string name="buisiness_name" />
+    <string name="business_name">Business Name</string>
+    <string name="submit">Submit</string>
+    <string name="your_tagline_here">Your Tagline Here</string>
+    <string name="akhil_sarkar">Akhil Sarkar</string>
+    <string name="managing_director">Managing Director</string>
+    <string name="_91_9825486060">+91 9825486060</string>
+    <string name="_107_ocean_business_park_surat">107, Ocean Business Park, Surat</string>
+    <string name="rw8_akhil_gmail_com">rw8.akhil@gmail.com</string>
+    <string name="fruiton">Fruiton</string>
+</resources>

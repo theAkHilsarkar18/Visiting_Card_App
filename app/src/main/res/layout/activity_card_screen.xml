@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".CardScreen">
+    <FrameLayout
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:layout_width="350dp"
+        android:layout_height="220dp"
+        android:background="@drawable/card_bg"
+        >
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_launcher_foreground"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fruiton"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:textSize="22sp"
+                android:letterSpacing="0.1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_tagline_here"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:textSize="12sp"
+                android:letterSpacing="0.1"/>
+
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="250dp"
+       android:orientation="horizontal">
+
+       <FrameLayout
+           android:layout_marginTop="15dp"
+           android:layout_gravity="center"
+           android:foregroundGravity="center"
+           android:layout_width="150dp"
+           android:layout_height="220dp"
+           android:background="@drawable/card_bg2"
+           >
+
+           <LinearLayout
+               android:gravity="center"
+               android:layout_gravity="center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               >
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/ic_launcher_foreground"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/fruiton"
+                   android:gravity="center"
+                   android:textColor="@color/white"
+                   android:textStyle="normal"
+                   android:textSize="20sp"
+                   android:letterSpacing="0.1"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/your_tagline_here"
+                   android:textColor="@color/white"
+                   android:textStyle="normal"
+                   android:textSize="10sp"
+                   android:letterSpacing="0.1"/>
+
+
+
+           </LinearLayout>
+
+
+
+
+       </FrameLayout>
+
+       <FrameLayout
+           android:layout_marginTop="15dp"
+           android:layout_gravity="center"
+           android:foregroundGravity="center"
+           android:layout_width="200dp"
+           android:layout_height="220dp"
+           android:background="@drawable/card_bg3"
+           >
+
+           <LinearLayout
+               android:gravity="start"
+               android:layout_gravity="center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_marginLeft="8dp"
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/akhil_sarkar"
+                   android:gravity="start"
+                   android:layout_gravity="start"
+                   android:textColor="@color/primary"
+                   android:textStyle="normal"
+                   android:textSize="20sp"
+                   android:letterSpacing="0"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/managing_director"
+                   android:textColor="@color/black"
+                   android:textStyle="normal"
+                   android:textSize="10sp"
+                   android:letterSpacing="0.1"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="20dp"
+                   android:text="@string/_91_9825486060"
+                   android:textColor="@color/primary"
+                   android:textStyle="normal"
+                   android:textSize="12sp"
+                   android:letterSpacing="0.1"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/_107_ocean_business_park_surat"
+                   android:textColor="@color/primary"
+                   android:textStyle="normal"
+                   android:textSize="12sp"
+                   android:letterSpacing="0.1"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/rw8_akhil_gmail_com"
+                   android:textColor="@color/primary"
+                   android:textStyle="normal"
+                   android:textSize="12sp"
+                   android:letterSpacing="0.1"/>
+
+
+
+           </LinearLayout>
+
+
+
+
+       </FrameLayout>
+
+
+   </LinearLayout>
+
+
+
+</LinearLayout>

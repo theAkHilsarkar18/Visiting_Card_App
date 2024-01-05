@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgColor"
+    tools:context=".HomeScreen">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/add_details"
+       android:textColor="@color/primary"
+       android:textSize="22sp"
+       android:textStyle="bold"
+       android:gravity="center"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"/>
+
+   <ImageView
+       android:backgroundTint="@color/primary"
+       android:layout_gravity="center"
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:layout_marginTop="5dp"
+       android:background="@drawable/pro_up"/>
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/upload_image"
+       android:textColor="@color/primary"
+       android:textSize="15sp"
+       android:layout_marginTop="5dp"
+       android:gravity="center"
+       android:layout_marginBottom="10dp"/>
+
+   <FrameLayout
+       android:layout_marginTop="15dp"
+       android:layout_gravity="center"
+       android:foregroundGravity="center"
+       android:layout_width="350dp"
+       android:layout_height="460dp"
+       android:background="@drawable/home_container"
+       >
+<!--      Input colum-->
+      <LinearLayout
+          android:orientation="vertical"
+          android:gravity="center"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+         <!--       for name input-->
+         <com.google.android.material.textfield.TextInputLayout
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+             android:layout_width="300dp"
+             android:layout_marginTop="20dp"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:hint="@string/name"
+             >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+         </com.google.android.material.textfield.TextInputLayout>
+
+         <!--       for company name-->
+         <com.google.android.material.textfield.TextInputLayout
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+             android:layout_width="300dp"
+             android:layout_marginTop="10dp"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:hint="@string/business_name"
+             >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+         </com.google.android.material.textfield.TextInputLayout>
+
+         <!--       for phone-->
+         <com.google.android.material.textfield.TextInputLayout
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+             android:layout_width="300dp"
+             android:layout_marginTop="10dp"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:hint="@string/phone"
+             >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+         </com.google.android.material.textfield.TextInputLayout>
+
+         <!--       for email-->
+         <com.google.android.material.textfield.TextInputLayout
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+             android:layout_width="300dp"
+             android:layout_marginTop="10dp"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:hint="@string/email"
+             >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+         </com.google.android.material.textfield.TextInputLayout>
+
+
+         <!--       for address-->
+         <com.google.android.material.textfield.TextInputLayout
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+             android:layout_width="300dp"
+             android:layout_marginTop="10dp"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:hint="@string/address"
+             >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+         </com.google.android.material.textfield.TextInputLayout>
+
+         <Button
+             android:id="@+id/button"
+             android:layout_marginTop="30dp"
+             android:layout_width="300dp"
+             android:layout_height="wrap_content"
+             android:text="@string/submit"
+             />
+
+
+
+      </LinearLayout>
+
+
+   </FrameLayout>
+
+</LinearLayout>
