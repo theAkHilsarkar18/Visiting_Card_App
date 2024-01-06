@@ -19,13 +19,27 @@
        android:layout_marginTop="10dp"
        android:layout_marginBottom="10dp"/>
 
+   <androidx.cardview.widget.CardView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       app:cardCornerRadius="8dp"
+       android:layout_margin="5dp"
+       android:elevation="10dp">
    <ImageView
+       android:id="@+id/uploadImageButton"
        android:backgroundTint="@color/primary"
        android:layout_gravity="center"
        android:layout_width="100dp"
        android:layout_height="100dp"
-       android:layout_marginTop="5dp"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:scaleType="centerCrop"
        android:background="@drawable/pro_up"/>
+
+   </androidx.cardview.widget.CardView>
 
    <TextView
        android:layout_width="match_parent"
@@ -60,6 +74,7 @@
              android:layout_height="wrap_content"
              android:gravity="center"
              android:hint="@string/name"
+             android:id="@+id/name"
              >
 
             <com.google.android.material.textfield.TextInputEditText
@@ -76,6 +91,8 @@
              android:layout_height="wrap_content"
              android:gravity="center"
              android:hint="@string/business_name"
+             android:id="@+id/business_name"
+
              >
 
             <com.google.android.material.textfield.TextInputEditText
@@ -92,9 +109,10 @@
              android:layout_height="wrap_content"
              android:gravity="center"
              android:hint="@string/phone"
-             >
+             android:id="@+id/phone">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:inputType="phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -108,9 +126,11 @@
              android:layout_height="wrap_content"
              android:gravity="center"
              android:hint="@string/email"
+             android:id="@+id/email"
              >
 
             <com.google.android.material.textfield.TextInputEditText
+                android:inputType="textEmailAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -125,6 +145,7 @@
              android:layout_height="wrap_content"
              android:gravity="center"
              android:hint="@string/address"
+             android:id="@+id/address"
              >
 
             <com.google.android.material.textfield.TextInputEditText

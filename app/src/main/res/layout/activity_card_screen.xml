@@ -25,11 +25,13 @@
             android:orientation="vertical"
             >
             <ImageView
+                android:id="@+id/cardImg1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/ic_launcher_foreground"/>
 
             <TextView
+                android:id="@+id/card_business_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/fruiton"
@@ -38,6 +40,7 @@
                 android:textSize="22sp"
                 android:letterSpacing="0.1"/>
             <TextView
+                android:id="@+id/tagline"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/your_tagline_here"
@@ -75,11 +78,13 @@
                android:orientation="vertical"
                >
                <ImageView
+                   android:id="@+id/cardImg2"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:background="@drawable/ic_launcher_foreground"/>
 
                <TextView
+                   android:id="@+id/card_business_name2"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="@string/fruiton"
@@ -89,6 +94,7 @@
                    android:textSize="20sp"
                    android:letterSpacing="0.1"/>
                <TextView
+                   android:id="@+id/cardTagline2"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="@string/your_tagline_here"
@@ -125,6 +131,7 @@
                >
 
                <TextView
+                   android:id="@+id/cardName"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="@string/akhil_sarkar"
@@ -135,6 +142,7 @@
                    android:textSize="20sp"
                    android:letterSpacing="0"/>
                <TextView
+                   android:id="@+id/cardRole"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="@string/managing_director"
@@ -144,6 +152,7 @@
                    android:letterSpacing="0.1"/>
 
                <TextView
+                   android:id="@+id/cardPhone"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:layout_marginTop="20dp"
@@ -154,6 +163,7 @@
                    android:letterSpacing="0.1"/>
 
                <TextView
+                   android:id="@+id/cardAddress"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="@string/_107_ocean_business_park_surat"
@@ -163,6 +173,7 @@
                    android:letterSpacing="0.1"/>
 
                <TextView
+                   android:id="@+id/cardEmail"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="@string/rw8_akhil_gmail_com"
