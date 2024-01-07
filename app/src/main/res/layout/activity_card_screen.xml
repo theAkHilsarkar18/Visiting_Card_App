@@ -8,47 +8,49 @@
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".CardScreen">
+
     <FrameLayout
-        android:layout_marginTop="15dp"
-        android:layout_gravity="center"
-        android:foregroundGravity="center"
+        android:id="@+id/card1Theme"
         android:layout_width="350dp"
         android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/theme1"
         android:background="@drawable/card_bg"
-        >
+        android:foregroundGravity="center">
 
         <LinearLayout
-            android:gravity="center"
-            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
             <ImageView
                 android:id="@+id/cardImg1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ic_launcher_foreground"/>
+                android:background="@drawable/ic_launcher_foreground" />
 
             <TextView
                 android:id="@+id/card_business_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:letterSpacing="0.1"
                 android:text="@string/fruiton"
                 android:textColor="@color/white"
-                android:textStyle="normal"
                 android:textSize="22sp"
-                android:letterSpacing="0.1"/>
+                android:textStyle="normal" />
+
             <TextView
                 android:id="@+id/tagline"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:letterSpacing="0.1"
                 android:text="@string/your_tagline_here"
                 android:textColor="@color/white"
-                android:textStyle="normal"
                 android:textSize="12sp"
-                android:letterSpacing="0.1"/>
-
+                android:textStyle="normal" />
 
 
         </LinearLayout>
@@ -56,144 +58,264 @@
 
     </FrameLayout>
 
-   <LinearLayout
-       android:layout_width="wrap_content"
-       android:layout_height="250dp"
-       android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:orientation="horizontal">
 
-       <FrameLayout
-           android:layout_marginTop="15dp"
-           android:layout_gravity="center"
-           android:foregroundGravity="center"
-           android:layout_width="150dp"
-           android:layout_height="220dp"
-           android:background="@drawable/card_bg2"
-           >
+        <FrameLayout
+            android:layout_width="150dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/card_bg2"
+            android:foregroundGravity="center">
 
-           <LinearLayout
-               android:gravity="center"
-               android:layout_gravity="center"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:orientation="vertical"
-               >
-               <ImageView
-                   android:id="@+id/cardImg2"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:background="@drawable/ic_launcher_foreground"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
 
-               <TextView
-                   android:id="@+id/card_business_name2"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="@string/fruiton"
-                   android:gravity="center"
-                   android:textColor="@color/white"
-                   android:textStyle="normal"
-                   android:textSize="20sp"
-                   android:letterSpacing="0.1"/>
-               <TextView
-                   android:id="@+id/cardTagline2"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="@string/your_tagline_here"
-                   android:textColor="@color/white"
-                   android:textStyle="normal"
-                   android:textSize="10sp"
-                   android:letterSpacing="0.1"/>
+                <ImageView
+                    android:id="@+id/cardImg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_launcher_foreground" />
 
+                <TextView
+                    android:id="@+id/card_business_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:letterSpacing="0.1"
+                    android:text="@string/fruiton"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
 
-
-           </LinearLayout>
+                <TextView
+                    android:id="@+id/cardTagline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.1"
+                    android:text="@string/your_tagline_here"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
 
 
+            </LinearLayout>
 
 
-       </FrameLayout>
+        </FrameLayout>
 
-       <FrameLayout
-           android:layout_marginTop="15dp"
-           android:layout_gravity="center"
-           android:foregroundGravity="center"
-           android:layout_width="200dp"
-           android:layout_height="220dp"
-           android:background="@drawable/card_bg3"
-           >
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/card_bg3"
+            android:foregroundGravity="center">
 
-           <LinearLayout
-               android:gravity="start"
-               android:layout_gravity="center"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:orientation="vertical"
-               android:layout_marginLeft="8dp"
-               >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:gravity="start"
+                android:orientation="vertical">
 
-               <TextView
-                   android:id="@+id/cardName"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="@string/akhil_sarkar"
-                   android:gravity="start"
-                   android:layout_gravity="start"
-                   android:textColor="@color/primary"
-                   android:textStyle="normal"
-                   android:textSize="20sp"
-                   android:letterSpacing="0"/>
-               <TextView
-                   android:id="@+id/cardRole"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="@string/managing_director"
-                   android:textColor="@color/black"
-                   android:textStyle="normal"
-                   android:textSize="10sp"
-                   android:letterSpacing="0.1"/>
+                <TextView
+                    android:id="@+id/cardName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:gravity="start"
+                    android:letterSpacing="0"
+                    android:text="@string/akhil_sarkar"
+                    android:textColor="@color/primary"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
 
-               <TextView
-                   android:id="@+id/cardPhone"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_marginTop="20dp"
-                   android:text="@string/_91_9825486060"
-                   android:textColor="@color/primary"
-                   android:textStyle="normal"
-                   android:textSize="12sp"
-                   android:letterSpacing="0.1"/>
+                <TextView
+                    android:id="@+id/cardRole"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.1"
+                    android:text="@string/managing_director"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
 
-               <TextView
-                   android:id="@+id/cardAddress"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="@string/_107_ocean_business_park_surat"
-                   android:textColor="@color/primary"
-                   android:textStyle="normal"
-                   android:textSize="12sp"
-                   android:letterSpacing="0.1"/>
+                <TextView
+                    android:id="@+id/cardPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:letterSpacing="0.1"
+                    android:text="@string/_91_9825486060"
+                    android:textColor="@color/primary"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
 
-               <TextView
-                   android:id="@+id/cardEmail"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="@string/rw8_akhil_gmail_com"
-                   android:textColor="@color/primary"
-                   android:textStyle="normal"
-                   android:textSize="12sp"
-                   android:letterSpacing="0.1"/>
+                <TextView
+                    android:id="@+id/cardAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.1"
+                    android:text="@string/_107_ocean_business_park_surat"
+                    android:textColor="@color/primary"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/cardEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.1"
+                    android:text="@string/rw8_akhil_gmail_com"
+                    android:textColor="@color/primary"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
 
 
 
-           </LinearLayout>
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/theme_colour"
+        android:textColor="@color/primary"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"/>
+
+    <FrameLayout
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+            <ScrollView
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:foregroundGravity="center"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/theme1"
+                        android:layout_margin="10dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/theme1"
+                        android:background="@drawable/theme_box"
+                        android:foregroundGravity="center"/>
+
+                    <FrameLayout
+                        android:id="@+id/theme2"
+                        android:layout_margin="10dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/theme2"
+                        android:background="@drawable/theme_box"
+                        android:foregroundGravity="center"/>
+                    <FrameLayout
+                        android:id="@+id/theme3"
+                        android:layout_margin="10dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/theme3"
+                        android:background="@drawable/theme_box"
+                        android:foregroundGravity="center"/>
+
+                    <FrameLayout
+                        android:id="@+id/theme5"
+                        android:layout_margin="10dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/theme5"
+                        android:background="@drawable/theme_box"
+                        android:foregroundGravity="center"/>
+                    <FrameLayout
+                        android:id="@+id/theme6"
+                        android:layout_margin="10dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:backgroundTint="@color/theme6"
+                        android:layout_gravity="center"
+                        android:background="@drawable/theme_box"
+                        android:foregroundGravity="center"/>
+                    <FrameLayout
+                        android:id="@+id/theme7"
+                        android:layout_margin="10dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/theme7"
+                        android:background="@drawable/theme_box"
+                        android:foregroundGravity="center"/>
+
+                    <FrameLayout
+                        android:id="@+id/theme4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/theme_box"
+                        android:backgroundTint="@color/theme4"
+                        android:foregroundGravity="center" />
+
+                    <FrameLayout
+                        android:id="@+id/theme8"
+                        android:layout_margin="10dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/theme8"
+                        android:background="@drawable/theme_box"
+                        android:foregroundGravity="center"/>
+                    <FrameLayout
+                        android:id="@+id/theme9"
+                        android:layout_margin="10dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/theme9"
+                        android:background="@drawable/theme_box"
+                        android:foregroundGravity="center"/>
+
+
+                </LinearLayout>
+
+            </ScrollView>
 
 
 
 
-       </FrameLayout>
-
-
-   </LinearLayout>
-
-
+    </FrameLayout>
+    
 
 </LinearLayout>

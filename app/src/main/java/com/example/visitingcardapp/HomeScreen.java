@@ -13,39 +13,57 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.google.android.material.textfield.TextInputEditText;
+
 public class HomeScreen extends AppCompatActivity {
     Button button;
-
-    // constant to compare
-    // the activity result code
     int SELECT_PICTURE = 200;
     ImageView img;
+
+    TextInputEditText txtName;
+    TextInputEditText txtBusinessName;
+    TextInputEditText txtPhone;
+    TextInputEditText txtEmail;
+    TextInputEditText txtAddress;
+
+    String name;
+    String business;
+    String phone;
+    String email;
+    String address;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_home_screen);
         button = (Button) findViewById(R.id.button);
-        EditText txtName = findViewById(R.id.name);
-        EditText txtBusinessName = findViewById(R.id.business_name);
-        EditText txtPhone = findViewById(R.id.phone);
-        EditText txtEmail = findViewById(R.id.email);
-        EditText txtAddress = findViewById(R.id.address);
+        txtName = findViewById(R.id.name);
+        txtBusinessName =  findViewById(R.id.business_name);
+        txtPhone =  findViewById(R.id.phone);
+        txtEmail =  findViewById(R.id.email);
+        txtAddress =  findViewById(R.id.address);
+
+
+
+        Intent sendDetail = new Intent(this, CardScreen.class);
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String name = txtName.getText().toString();
-                String business = txtBusinessName.getText().toString();
-                String phone = txtPhone.getText().toString();
-                String email = txtEmail.getText().toString();
-                String address = txtAddress.getText().toString();
 
-                Intent sendDetail = new Intent(getApplicationContext(), CardScreen.class);
+                name = txtName.getText().toString();
+                business = txtBusinessName.getText().toString();
+                phone = txtPhone.getText().toString();
+                email = txtEmail.getText().toString();
+                address = txtAddress.getText().toString();
+
                 sendDetail.putExtra("name",name);
                 sendDetail.putExtra("business",business);
                 sendDetail.putExtra("phone",phone);
                 sendDetail.putExtra("email",email);
                 sendDetail.putExtra("address",address);
+                startActivity(sendDetail);
                 openNewActivity();
                 Toast.makeText(getBaseContext(), "Detail Submitted !" , Toast.LENGTH_SHORT ).show();
             }

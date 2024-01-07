@@ -6,4 +6,13 @@
     <color name="darkOcean">#0E6FD8</color>
     <color name="bgColor">#F7F6FB</color>
     <color name="primary">#6750A3</color>
+    <color name="theme1">#6750A3</color>
+    <color name="theme2">#F44336</color>
+    <color name="theme3">#E91E63</color>
+    <color name="theme4">#009688</color>
+    <color name="theme5">#4CAF50</color>
+    <color name="theme6">#FF9800</color>
+    <color name="theme7">#3F51B5</color>
+    <color name="theme8">#0E0E0E</color>
+    <color name="theme9">#1E0705</color>
 </resources>

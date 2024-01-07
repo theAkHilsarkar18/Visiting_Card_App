@@ -73,12 +73,11 @@
              android:layout_marginTop="20dp"
              android:layout_height="wrap_content"
              android:gravity="center"
-             android:hint="@string/name"
-             android:id="@+id/name"
-             >
+             android:hint="@string/name">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
+                android:id="@+id/name"
                 android:layout_height="wrap_content" />
 
          </com.google.android.material.textfield.TextInputLayout>
@@ -91,11 +90,12 @@
              android:layout_height="wrap_content"
              android:gravity="center"
              android:hint="@string/business_name"
-             android:id="@+id/business_name"
+
 
              >
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/business_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -109,9 +109,10 @@
              android:layout_height="wrap_content"
              android:gravity="center"
              android:hint="@string/phone"
-             android:id="@+id/phone">
+             >
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone"
                 android:inputType="phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -126,10 +127,10 @@
              android:layout_height="wrap_content"
              android:gravity="center"
              android:hint="@string/email"
-             android:id="@+id/email"
              >
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
                 android:inputType="textEmailAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -145,10 +146,10 @@
              android:layout_height="wrap_content"
              android:gravity="center"
              android:hint="@string/address"
-             android:id="@+id/address"
              >
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
