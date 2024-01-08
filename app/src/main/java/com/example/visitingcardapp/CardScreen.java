@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 public class CardScreen extends AppCompatActivity {
 
+
+
    TextView txtName;
     TextView txtBusinessName1;
     TextView txtBusinessName2;
