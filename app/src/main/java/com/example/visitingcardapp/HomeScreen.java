@@ -35,7 +35,6 @@ public class HomeScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_home_screen);
         button = (Button) findViewById(R.id.button);
         txtName = findViewById(R.id.name);
@@ -76,9 +75,6 @@ public class HomeScreen extends AppCompatActivity {
 
             }
         });
-
-
-
     }
 
     void imageSelect()
