@@ -82,22 +82,14 @@ public class CardScreen extends AppCompatActivity {
 
         Drawable bg1 = card1Theme.getBackground();
         Drawable bg2 = card2Theme.getBackground();
-        ShapeDrawable border1 = new ShapeDrawable();
-        border1.setShape(new RectShape());
 
 //
-//        shapedrawable.getPaint().setColor(Color.RED);
-//        shapedrawable.getPaint().setStrokeWidth(10f);
-//        shapedrawable.getPaint().setStyle(Style.STROKE);
-//        yourButton.setBackground(shapedrawable);
-
 
         them1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 bg1.setColorFilter(Color.parseColor("#6750A3"), PorterDuff.Mode.SRC_ATOP);
                 bg2.setColorFilter(Color.parseColor("#6750A3"), PorterDuff.Mode.SRC_ATOP);
-//                card1Theme.setBackgroundColor(R.id.theme5);
             }
         });
 

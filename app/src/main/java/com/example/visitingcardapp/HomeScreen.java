@@ -57,6 +57,9 @@ public class HomeScreen extends AppCompatActivity {
                 email = txtEmail.getText().toString();
                 address = txtAddress.getText().toString();
 
+                /// error for ton send image in next screen
+
+//                sendDetail.putExtra("MyImagePath", img.getAbsoluteFile());
                 sendDetail.putExtra("name",name);
                 sendDetail.putExtra("business",business);
                 sendDetail.putExtra("phone",phone);
