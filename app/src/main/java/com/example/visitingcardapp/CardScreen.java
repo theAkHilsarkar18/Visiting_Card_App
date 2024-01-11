@@ -16,11 +16,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class CardScreen extends AppCompatActivity {
 
-
+    ImageView img1;
+    ImageView img2;
     TextView txtName;
     TextView txtBusinessName1;
     TextView txtBusinessName2;
@@ -53,6 +55,10 @@ public class CardScreen extends AppCompatActivity {
         String phone = intent.getStringExtra("phone");
         String email = intent.getStringExtra("email");
         String address = intent.getStringExtra("address");
+
+
+        img1 = findViewById(R.id.cardImg1);
+        img2 = findViewById(R.id.cardImg2);
 
         txtName = (TextView) findViewById(R.id.cardName);
         txtBusinessName1 = (TextView) findViewById(R.id.card_business_name);

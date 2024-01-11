@@ -75,7 +75,7 @@ public class HomeScreen extends AppCompatActivity {
         img.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 imageSelect();
-
+                sendDetail.putExtra("img", img.getDrawableState());
             }
         });
     }
@@ -90,9 +90,7 @@ public class HomeScreen extends AppCompatActivity {
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
         if (resultCode == RESULT_OK) {
-
             // compare the resultCode with the
             // SELECT_PICTURE constant
             if (requestCode == SELECT_PICTURE) {
@@ -106,8 +104,6 @@ public class HomeScreen extends AppCompatActivity {
             }
         }
     }
-
-
 
     public void openNewActivity(){
         Intent intent = new Intent(this, CardScreen.class);
